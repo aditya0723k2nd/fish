@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hemenar Page</title>
+<style>
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Header Styles */
+  .top-bar {
+    background-color: #d1b383;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px 50px;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+  }
+
+  /* Products Section */
+  .product-section {
+    padding: 40px 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+
+  .product-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  /* Adjusted Product Grid */
+  .product-grid {
+    display: flex;
+    gap: 30px; /* Adjust the space between products */
+    flex-wrap: nowrap; /* Ensure products stay in one row */
+    overflow-x: auto; /* Allow horizontal scrolling if content exceeds the width */
+  }
+
+  /* Adjusted Product Card */
+  .product-card {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 23%; /* Keep width as is for a consistent layout */
+    padding: 15px;
+  }
+
+  .product-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .product-details {
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .product-price {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .product-old-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 5px;
+  }
+
+  .hover-icons {
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .product-card:hover .hover-icons {
+    display: flex;
+  }
+
+  .shop-more-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+  }
+
+  /* Footer Styles */
+  .footer {
+    background-color: #f5f5f5;
+    padding: 40px 50px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-col {
+    flex: 1;
+  }
+
+  .footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .footer-col p,
+  .footer-col a {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-socials a {
+    font-size: 20px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="top-bar">PAN INDIA FREE SHIPPING.</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="logo">HEMENAR</div>
+  <nav class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">New Arrival</a>
+    <a href="#">Belts</a>
+    <a href="#">Wallets</a>
+    <a href="#">Laptop Bags</a>
+  </nav>
+  <div class="icons">
+    <a href="#">&#128269;</a>
+    <a href="#">&#128100;</a>
+    <a href="#">&#9825;</a>
+    <a href="#">&#128722;</a>
+  </div>
+</header>
+
+<!-- Product Section -->
+<section class="product-section">
+  <h2>Discover Our Favourites</h2>
+  <div class="product-grid">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <span class="discount-badge">-57%</span>
+      <img src="https://via.placeholder.com/200" alt="Product 1">
+      <div class="product-details">
+        <p class="product-title">Engraved Metal Buckle Brown Leather Belt</p>
+        <p class="product-price">₹ 4,299.00 <span class="product-old-price">₹ 10,000.00</span></p>
+      </div>
+      <div class="hover-icons">
+        <a href="#">&#9825;</a>
+        <a href="#">&#128722;</a>
+        <a href="#">&#128065;</a>
+      </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <span class="discount-badge">-33%</span>
+      <img src="https://via.placeholder.com/200" alt="Product 2">
+      <div class="product-details">
+        <p class="product-title">Unisex Metal Auto Grip Canvas Belt</p>
+        <p class="product-price">₹ 1,999.00 <span class="product-old-price">₹ 3,000.00</span></p>
+      </div>
+      <div class="hover-icons">
+        <a href="#">&#9825;</a>
+        <a href="#">&#128722;</a>
+        <a href="#">&#128065;</a>
+      </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card">
+      <span class="discount-badge">-57%</span>
+      <img src="https://via.placeholder.com/200" alt="Product 3">
+      <div class="product-details">
+        <p class="product-title">Engraved Metal Buckle Black Leather Belt</p>
+        <p class="product-price">₹ 4,299.00 <span class="product-old-price">₹ 10,000.00</span></p>
+      </div>
+      <div class="hover-icons">
+        <a href="#">&#9825;</a>
+        <a href="#">&#128722;</a>
+        <a href="#">&#128065;</a>
+      </div>
+    </div>
+    <!-- Product 4 -->
+    <div class="product-card">
+      <span class="discount-badge">-58%</span>
+      <img src="https://via.placeholder.com/200" alt="Product 4">
+      <div class="product-details">
+        <p class="product-title">Brown Braided Genuine Leather Belt</p>
+        <p class="product-price">₹ 2,499.00 <span class="product-old-price">₹ 6,000.00</span></p>
+      </div>
+      <div class="hover-icons">
+        <a href="#">&#9825;</a>
+        <a href="#">&#128722;</a>
+        <a href="#">&#128065;</a>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="shop-more-btn">Shop more</a>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Our Store -->
+    <div class="footer-col">
+      <h3>Our store</h3>
+      <p>HEMENAR is an online place for accessories. We put emphasis on quality and fashion products.</p>
+      <p><strong>Phone</strong>: (91) 9991 147 147</p>
+      <p><strong>Email</strong>: support@hemenar.com</p>
+      <div class="footer-socials">
+        <a href="#">&#xf09a;</a>
+        <a href="#">&#xf16d;</a>
+        <a href="#">&#xf167;</a>
+        <a href="#">&#xf232;</a>
+      </div>
+    </div>
+    <!-- Useful Links -->
+    <div class="footer-col">
+      <h3>Useful Links</h3>
+      <p><a href="#">Shipping and Handling</a></p>
+      <p><a href="#">Refund Policy</a></p>
+      <p><a href="#">Terms and Conditions</a></p>
+    </div>
+    <!-- About -->
+    <div class="footer-col">
+      <h3>About</h3>
+      <p><a href="#">About Us</a></p>
+      <p><a href="#">Contact Us</a></p>
+      <p><a href="#">Size Chart</a></p>
+    </div>
+    <!-- Newsletter -->
+    <div class="footer-col">
+      <h3>Let's get in touch</h3>
+      <p>Sign up for our newsletter.</p>
+      <input type="email" placeholder="Enter your email">
+      <p><input type="checkbox"> I agree with the Terms & conditions</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© Hemenar</div>
+</footer>
+
+</body>
+</html>
